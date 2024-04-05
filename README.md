@@ -45,6 +45,7 @@ Split and merge HSV Image
 ### i) Read and display the image
 input:
 ```
+import numpy as np
 import cv2
 image=cv2.imread('dip.jpeg',1)
 image=cv2.resize(image,(400,300))
@@ -59,15 +60,17 @@ output:
 
 
 ### ii)Write the image
+
 input:
+
 ```
 #ex1 color to rgb
-import cv2
-import numpy as np
 img=cv2.imread("rcb.jpg")
 print(img.shape)
+
 ```
 output:
+
 ![image](https://github.com/Gokulanbazhagan/COLOR_CONVERSIONS_OF-IMAGE/assets/119518996/c9369091-37c5-4081-891a-cd64a8016ee1)
 
 
@@ -76,22 +79,25 @@ output:
 ### iii)Shape of the Image
 
 input:
+
 ```
-#ex1 color to rgb
-import cv2
-import numpy as np
+
 img=cv2.imread("rcb.jpg")
 print(img.shape)
+
 ```
+
 output:
+
 ![image](https://github.com/Gokulanbazhagan/COLOR_CONVERSIONS_OF-IMAGE/assets/119518996/7aaea9ac-2a9c-4760-92df-012d99ff1391)
 
 
 ### iv)Access rows and columns
+
 input:
+
 ```
     import random
-    import cv2
     image=cv2.imread('rcb.jpg',1)
     image=cv2.resize(image,(400,400))
     for i in range (150,200):
@@ -102,14 +108,17 @@ input:
     cv2.imshow('part image',image)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
+
 ```
+
 output:
+
 ![image](https://github.com/Gokulanbazhagan/COLOR_CONVERSIONS_OF-IMAGE/assets/119518996/56702a79-e681-4fef-8ed5-86945cbfcbe9)
 
 ### v)Cut and paste portion of image
+
 input:
 ```
-   import cv2
    image=cv2.imread('rcb.jpg',1)
    image=cv2.resize(image,(400,400))
    tag =image[150:200,110:160]
@@ -119,12 +128,14 @@ input:
    cv2.destroyAllWindows()
 
 ```
+
 ![image](https://github.com/Gokulanbazhagan/COLOR_CONVERSIONS_OF-IMAGE/assets/119518996/f6a5c71f-d2a6-4b07-a7b3-98dadbe8c351)
 
 
 ### vi) BGR and RGB to HSV and GRAY
+
 ```
-import cv2
+
 img = cv2.imread('rcb.jpg',1)
 img = cv2.resize(img,(300,200))
 cv2.imshow('Original Image',img)
@@ -151,7 +162,7 @@ output:
 
 ### vii) HSV to RGB and BGR
 ```
-import cv2
+
 img = cv2.imread('rcb.jpg')
 img = cv2.resize(img,(300,200))
 
@@ -169,13 +180,16 @@ cv2.destroyAllWindows()
 
 
 ```
+
 output:
+
 ![image](https://github.com/Gokulanbazhagan/COLOR_CONVERSIONS_OF-IMAGE/assets/119518996/324e7f5c-8f39-4059-a21b-53c45c793d81)
 
 
 ### viii) RGB and BGR to YCrCb
+
 ```
-import cv2
+
 img = cv2.imread('rcb.jpg')
 img = cv2.resize(img,(300,200))
 cv2.imshow('Original RGB Image',img)
@@ -191,13 +205,16 @@ cv2.destroyAllWindows()
 
 
 ```
+
 output:
+
 ![image](https://github.com/Gokulanbazhagan/COLOR_CONVERSIONS_OF-IMAGE/assets/119518996/fbc77567-2d0d-4922-85ae-282e195ea2ec)
 
 
 ### ix) Split and merge RGB Image
+
 ```
-import cv2
+
 img = cv2.imread('rcb.jpg',1)
 img = cv2.resize(img,(300,200))
 
@@ -221,7 +238,7 @@ cv2.destroyAllWindows()
 
 ### x) Split and merge HSV Image
 ```
-import cv2
+
 img = cv2.imread("rcb.jpg",1)
 img = cv2.resize(img,(300,200))
 img=cv2.cvtColor(img,cv2.COLOR_RGB2HSV)
@@ -237,8 +254,10 @@ cv2.imshow('Merged',merged)
 
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+
 ```
 output:
+
 ![image](https://github.com/Gokulanbazhagan/COLOR_CONVERSIONS_OF-IMAGE/assets/119518996/5d90208d-761c-4779-94eb-7960b35bf403)
 
 
