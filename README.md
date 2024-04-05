@@ -47,8 +47,8 @@ input:
 ```
 import numpy as np
 import cv2
-image=cv2.imread('dip.jpeg',1)
-image=cv2.resize(image,(400,300))
+image=cv2.imread('rcb.png')
+cv2.imshow('Windows',image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
@@ -64,7 +64,7 @@ output:
 input:
 
 ```
-#ex1 color to rgb
+
 img=cv2.imread("rcb.jpg")
 print(img.shape)
 
